@@ -105,6 +105,7 @@ module.exports = {
   getLITag: files => {
     let str = '';
     const list = files.map(e => e.split('.txt')[0]);
+    //txt파일 분절해서 이름만 쪼개는 거 같지?
     for (let i = 0; i < list.length; i++) {
       str += `<li><a href="./?title=${list[i]}">${list[i]}</a></li>`;
     }
